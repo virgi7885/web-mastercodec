@@ -1,0 +1,334 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.contenedor {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.navbar {
+  background-image: url('../assets/img/fondo-dorado.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 12px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  max-width: 100%;
+}
+
+.nav-right {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-icon {
+  font-size: 20px;
+  color: rgba(31, 18, 2, 0.5);;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-icon:hover {
+  color: #0a0400;
+}
+
+/* Responsive ajustes si hiciera falta */
+@media (max-width: 480px) {
+  .logo {
+    height: 36px;
+    max-width: 100%;
+  }
+
+  .nav-icon {
+    font-size: 18px;
+  }
+}
+
+/* Slider*/
+
+.slider-registro {
+  padding: 20px 20px;
+  background-image: url('../assets/img/fondo-dorado.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper {
+  position: relative;
+  width: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-bloque {
+  background-image: url('../assets/img/fondo-dorado.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 600px;  
+  border: 2px solid #000;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.contenido-texto{
+    padding: 60px 30px;
+}
+
+.contenido-texto h3 {
+  font-size: 2em;
+  color: #171716;
+  margin-bottom: 10px;
+}
+
+.contenido-texto p {
+  font-size: 1em;
+  color: #171716;
+  margin-bottom: 16px;
+}
+
+.btn-registro {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding: 12px 0;
+  border-top: 2px solid #000;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.btn-registro:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Animación del texto */
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.texto-btn.animar-texto {
+  animation: fadeZoomIn 0.5s ease forwards;
+}
+
+/* Eliminar contenido por defecto de las flechas de Swiper */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+/* Flechas personalizadas */
+.mySlider .slider-principal-prev,
+.mySlider .slider-principal-next {
+  all: unset;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.swiper-button-prev i,
+.swiper-button-next i {
+  font-size: 24px;
+  color: #000;
+}
+
+.swiper-button-prev { left: -10px; }
+.swiper-button-next { right: -10px; }
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}
+
+/*SLIDER MARCAS*/
+
+.slider-empresas {
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.slider-flex-wrap {
+  position: relative;
+}
+
+.swiperLogos {
+  flex: 1;
+  overflow: hidden;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  width: calc(100% / 6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-box {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: none;
+  border: none;
+}
+
+.logo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slider-logos-prev,
+.slider-logos-next {
+    position: absolute;
+    top: 50%;
+    translate: translateY(-50%);
+    z-index: 10;
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-logos-prev {
+  left: 10px;
+}
+
+.slider-logos-next {
+  right: 10px;
+}
+
+@media (min-width: 1024px) {
+  .slider-flex-wrap {
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    margin-left: calc(-50vw + 50%); /* Centra respecto al resto del contenido */
+  }
+}
+
+@media (max-width: 768px) {
+  .slider-logos-prev,
+  .slider-logos-next {
+    top: 45%; /* ajustá esto según necesites */
+    font-size: 13px;
+  }
+}
+
+/*BUSCADOR*/
+
+.buscador-seccion{
+    padding-top: 40px;
+}
+
+.buscador-form {
+  display: flex;
+  flex-wrap: nowrap; /* 👈 importante: no permite que se vayan a otra línea */
+  gap: 10px;
+  width: 100%;
+}
+
+.buscador-form input[type="text"] {
+  flex: 1; /* ✅ se adapta y ocupa el espacio restante */
+  min-width: 100px;
+  padding: 12px;
+  border: 2px solid #B18C5E;
+  border-radius: 6px;
+}
+
+.btn-filtrar,
+.btn-buscar {
+    flex: 0 0 auto; /* ✅ tamaño fijo según contenido */
+  padding: 12px 16px;
+  white-space: nowrap;
+  border: 2px solid #B18C5E;
+  background-image: url('../assets/img/fondo-dorado.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.btn-filtrar i,
+.btn-buscar i{
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.btn-buscar .icono {
+  display: none;
+}
+
+.btn-buscar .texto {
+  display: inline;
+}
+
+/* En pantallas pequeñas, mostrar solo el ícono */
+@media (max-width: 768px) {
+  .btn-buscar .icono {
+    display: inline;
+  }
+
+  .btn-buscar .texto {
+    display: none;
+  }
+
+  .btn-buscar i{
+    font-size: 1.2em; /* Ajuste para que el ícono no se vea muy pequeño */
+  }
+}
+
+.autocompletar-sugerencias {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  background: none;
+  border: none;
+  width: 100%;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+}

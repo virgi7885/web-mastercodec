@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MASTERCODEC</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/e9492eca77.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.php" class="logo-link">
+                    <img src="assets/img/Texto-dorado.png" alt="Logo" class="logo">
+                </a>
+            </div>
+
+            <div class="nav-right">
+                <a href="#" class="nav-icon">
+                    <i class="fa fa-search"></i>
+                </a>
+                <a href="#" class="nav-icon">
+                    <i class="fa fa-user"></i>
+                </a>
+                <a href="#" class="nav-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SLIDER PRINCIPAL-->
+    <section class="slider-registro">
+        <div class="contenedor">
+            <div class="swiper mySlider">
+                <!-- Flechas -->
+                <div class="swiper-button-prev .slider-principal-prev">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="swiper-button-next">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+
+                <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="slide-bloque">
+                    <div class="contenido-texto">
+                        <h3>Usuarios</h3>
+                        <p>Descubre ofertas exclusivas de nuestras empresas colaboradoras y disfruta promociones sin límite con tu tarjeta MASTERCODEC.</p>
+                    </div>
+                    <a href="#" class="btn-registro"><span class="texto-btn">Regístrate aquí</span></a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="slide-bloque">
+                    <div class="contenido-texto">
+                        <h3>Empresas</h3>
+                        <p>¿Quieres que más clientes conozcan o visiten tu empresa para poder ofrecerles tus productos y servicios? Regístrate y comienza a promocionarte.</p>
+                    </div>
+                    <a href="#" class="btn-registro"><span class="texto-btn">Regístrate aquí</span></a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SLIDER DE MARCAS 1-->
+    <section class="slider-empresas">
+        <div class="slider-flex-wrap">            
+
+            <div class="swiper swiperLogos">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/yelmo.jpg" alt="Logo 1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/7.jpeg" alt="Logo 2">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/6.jpeg" alt="Logo 3">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/8.jpeg" alt="Logo 4">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/aust.jpeg" alt="Logo 5">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/2.jpeg" alt="Logo 6">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/34.png" alt="Logo 7">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/35.jpg" alt="Logo 8">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/36.jpg" alt="Logo 9">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/37.jpg" alt="Logo 10">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/38.jpg" alt="Logo 11">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/10.jpeg" alt="Logo 12">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/yelmo.jpg" alt="Logo 1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/7.jpeg" alt="Logo 2">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/6.jpeg" alt="Logo 3">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/8.jpeg" alt="Logo 4">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/aust.jpeg" alt="Logo 5">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/2.jpeg" alt="Logo 6">
+                    </div>
+                </div>
+                <!-- Repetí según necesites -->
+            </div>
+            </div>
+
+            <button class="slider-logos-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-logos-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- SLIDER DE MARCAS 2-->
+    <section class="slider-empresas">
+        <div class="slider-flex-wrap">            
+
+            <div class="swiper swiperLogos">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/35.jpg" alt="Logo 8">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/36.jpg" alt="Logo 9">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/37.jpg" alt="Logo 10">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/38.jpg" alt="Logo 11">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/10.jpeg" alt="Logo 12">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/yelmo.jpg" alt="Logo 1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/7.jpeg" alt="Logo 2">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/6.jpeg" alt="Logo 3">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/8.jpeg" alt="Logo 4">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/aust.jpeg" alt="Logo 5">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/2.jpeg" alt="Logo 6">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/yelmo.jpg" alt="Logo 1">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/7.jpeg" alt="Logo 2">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/6.jpeg" alt="Logo 3">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/8.jpeg" alt="Logo 4">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/aust.jpeg" alt="Logo 5">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/2.jpeg" alt="Logo 6">
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="logo-box">
+                        <img src="assets/img/34.png" alt="Logo 7">
+                    </div>
+                </div>                
+                <!-- Repetí según necesites -->
+            </div>
+            </div>
+
+            <button class="slider-logos-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-logos-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+    </section>
+
+    <!--BUSCADOR-->
+    <section class="buscador-seccion">
+        <div class="contenedor">
+            <form class="buscador-form" id="buscadorPrincipal">
+                
+                <input 
+                type="text" 
+                name="termino" 
+                id="termino" 
+                placeholder="¿Qué estás buscando?" 
+                autocomplete="off"
+                />
+
+                <button type="button" class="btn-filtrar">
+                    <i class="fa-solid fa-filter"></i>
+                </button>
+                <button type="submit" class="btn-buscar">
+                    <span class="texto">Buscar</span>
+                    <i class="fas fa-search icono"></i>
+                </button>
+
+                <!-- Opcional: Contenedor para resultados sugeridos -->
+                <ul class="autocompletar-sugerencias" id="sugerencias"></ul>
+            </form>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -33,9 +33,9 @@ const slider = new Swiper('.mySlider', {
   }
 });
 
-//SLIDER DE MARCAS
+//SLIDER DE MARCAS 1
 
-const logoSlider = new Swiper('.swiperLogos', {
+const logoSlider = new Swiper('.marcas-slider-1', {
   loop: true,
   slidesPerView: 6,
   slidesPerGroup: 1,
@@ -45,8 +45,39 @@ const logoSlider = new Swiper('.swiperLogos', {
     disableOnInteraction: false
   },
   navigation: {
-    nextEl: '.slider-logos-next',
-    prevEl: '.slider-logos-prev'
+    nextEl: '.slider-logos-next-1',
+    prevEl: '.slider-logos-prev-1'
+  },
+  breakpoints: {
+    // A partir de 640px de ancho
+    640: {
+      slidesPerView: 6
+    },
+    // A partir de 768px de ancho
+    768: {
+      slidesPerView: 6
+    },
+    // A partir de 1024px de ancho (desktop)
+    1024: {
+      slidesPerView: 18
+    }
+  },
+});
+
+//SLIDER DE MARCAS 1
+
+const logoSlider = new Swiper('.marcas-slider-2', {
+  loop: true,
+  slidesPerView: 6,
+  slidesPerGroup: 1,
+  spaceBetween: 0,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false
+  },
+  navigation: {
+    nextEl: '.slider-logos-next-2',
+    prevEl: '.slider-logos-prev-2'
   },
   breakpoints: {
     // A partir de 640px de ancho

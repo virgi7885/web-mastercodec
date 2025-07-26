@@ -150,11 +150,13 @@ function cargarMasEmpresas() {
     const card = document.createElement('div');
     card.className = 'tarjeta-empresa';
     card.innerHTML = `
-      <img src="assets/img/${empresa.logo}" alt="${empresa.nombre}">
-      <h3>${empresa.nombre}</h3>
-      <p><strong>Localidad:</strong> ${empresa.localidad}</p>
-      <p><strong>CP:</strong> ${empresa.codigo_postal}</p>
-      <p><strong>Categoría:</strong> ${empresa.categoria}</p>
+    <img src="assets/img/${empresa.logo}" alt="${empresa.nombre}">
+    <div class="contenido-empresa">
+        <h3>${empresa.nombre}</h3>
+        <p><strong>Localidad:</strong> ${empresa.localidad}</p>
+        <p><strong>CP:</strong> ${empresa.codigo_postal}</p>
+        <p><strong>Categoría:</strong> ${empresa.categoria}</p>
+    </div>
     `;
     contenedor.appendChild(card);
   });

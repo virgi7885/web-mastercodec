@@ -353,23 +353,30 @@ body{
 .tarjeta-empresa {
   display: flex;
   flex-direction: column;
-  border: 2px solid #000;
+  border: 2px solid rgba(229, 225, 225, 0.7);
   border-radius: 12px;
-  padding: 20px;
-  background-color: #fff;
+  padding: none;
+  background-color: #F1F1F1;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 .tarjeta-empresa img {
   width: 100%;
   max-height: 200px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 8px 8px 0 0;
 }
+
+.contenido-empresa {
+  padding: 15px;
+}
+
 .tarjeta-empresa h3 {
+  font-size: 1em;
   margin-top: 15px;
   font-size: 1.5em;
 }
 .tarjeta-empresa p {
+  font-size: 0.7em;
   margin-top: 5px;
   color: #444;
 }

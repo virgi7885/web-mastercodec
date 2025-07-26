@@ -381,3 +381,15 @@ body{
   color: #444;
 }
 
+@media (max-width: 768px) {
+  .muro-empresas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .muro-empresas {
+    grid-template-columns: 1fr;
+  }
+}
+

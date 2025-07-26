@@ -190,7 +190,8 @@ body{
   position: relative;
 }
 
-.swiperLogos {
+.marcasSlider1,
+.marcasSlider2 {
   flex: 1;
   overflow: hidden;
 }
@@ -216,8 +217,10 @@ body{
   object-fit: cover;
 }
 
-.slider-logos-prev,
-.slider-logos-next {
+.slider-logos-prev-1,
+.slider-logos-next-1,
+.slider-logos-prev-2,
+.slider-logos-next-2 {
     position: absolute;
     top: 50%;
     translate: translateY(-50%);
@@ -232,11 +235,13 @@ body{
     justify-content: center;
 }
 
-.slider-logos-prev {
+.slider-logos-prev-1, 
+.slider-logos-prev-2 {
   left: 10px;
 }
 
-.slider-logos-next {
+.slider-logos-next-1,
+.slider-logos-next-2 {
   right: 10px;
 }
 
@@ -248,8 +253,10 @@ body{
 }
 
 @media (max-width: 768px) {
-  .slider-logos-prev,
-  .slider-logos-next {
+  .slider-logos-prev-1,
+  .slider-logos-next-1,
+  .slider-logos-prev-2,
+  .slider-logos-next-2  {
     top: 45%; /* ajustá esto según necesites */
     font-size: 13px;
   }

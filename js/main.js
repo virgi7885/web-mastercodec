@@ -35,7 +35,7 @@ const slider = new Swiper('.mySlider', {
 
 //SLIDER DE MARCAS 1
 
-const logoSlider = new Swiper('.marcas-slider-1', {
+const marcasSlider1 = new Swiper('.marcas-slider-1', {
   loop: true,
   slidesPerView: 6,
   slidesPerGroup: 1,
@@ -66,7 +66,7 @@ const logoSlider = new Swiper('.marcas-slider-1', {
 
 //SLIDER DE MARCAS 1
 
-const logoSlider = new Swiper('.marcas-slider-2', {
+const marcasSlider2 = new Swiper('.marcas-slider-2', {
   loop: true,
   slidesPerView: 6,
   slidesPerGroup: 1,

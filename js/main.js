@@ -122,6 +122,56 @@ input.addEventListener('input', () => {
   }
 });
 
+//MURO DE EMPRESAS
+
+let empresas = []; // aquí se guardarán los datos del JSON
+let pagina = 0; // control del scroll infinito
+const porPagina = 3; // cuántas empresas mostrar por carga
+
+// Cargar empresas desde el archivo JSON
+async function cargarEmpresas() {
+  const res = await fetch('empresas.json'); // archivo en la raíz del proyecto
+  const datos = await res.json();
+
+  // Las nuevas empresas van primero (últimas agregadas al principio)
+  empresas = datos.reverse();
+
+  cargarMasEmpresas(); // mostrar las primeras
+}
+
+// Mostrar más empresas al hacer scroll
+function cargarMasEmpresas() {
+  const contenedor = document.getElementById('resultados-empresas');
+  const inicio = pagina * porPagina;
+  const fin = inicio + porPagina;
+  const empresasPagina = empresas.slice(inicio, fin);
+
+  empresasPagina.forEach(empresa => {
+    const card = document.createElement('div');
+    card.className = 'tarjeta-empresa';
+    card.innerHTML = `
+      <img src="assets/img/${empresa.logo}" alt="${empresa.nombre}">
+      <h3>${empresa.nombre}</h3>
+      <p><strong>Localidad:</strong> ${empresa.localidad}</p>
+      <p><strong>CP:</strong> ${empresa.codigo_postal}</p>
+      <p><strong>Categoría:</strong> ${empresa.categoria}</p>
+    `;
+    contenedor.appendChild(card);
+  });
+
+  pagina++;
+}
+
+// Detectar scroll cerca del final para cargar más
+window.addEventListener('scroll', () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 50) {
+    cargarMasEmpresas();
+  }
+});
+
+cargarEmpresas(); // primera carga
+
+
 
 
 

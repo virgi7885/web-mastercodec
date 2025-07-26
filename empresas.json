@@ -1,0 +1,44 @@
+[
+  {
+    "nombre": "Café Aroma",
+    "localidad": "Madrid",
+    "codigo_postal": "28001",
+    "categoria": "Cafeterías",
+    "logo": "restaurante.jpg"
+  },
+  {
+    "nombre": "Pizzería Napoli",
+    "localidad": "Barcelona",
+    "codigo_postal": "08002",
+    "categoria": "Restaurantes",
+    "logo": "bar-copas.jpg"
+  },
+  {
+    "nombre": "Spa Relax",
+    "localidad": "Sevilla",
+    "codigo_postal": "41004",
+    "categoria": "Bienestar",
+    "logo": "hotel.jpg"
+  },
+  {
+    "nombre": "Librería Central",
+    "localidad": "Valencia",
+    "codigo_postal": "46001",
+    "categoria": "Cultura",
+    "logo": "gasoline-station.jpg"
+  },
+  {
+    "nombre": "Tech Store",
+    "localidad": "Bilbao",
+    "codigo_postal": "48002",
+    "categoria": "Electrónica",
+    "logo": "bar-copas.jpg"
+  },
+  {
+    "nombre": "Gimnasio FitZone",
+    "localidad": "Málaga",
+    "codigo_postal": "29001",
+    "categoria": "Deporte",
+    "logo": "restaurante.jpg"
+  }
+]
